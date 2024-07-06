@@ -1,0 +1,31 @@
+.container{
+    position: relative;
+}
+#visible{
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    transition: transform 1s ease-in-out;
+    color: transparent;
+}
+.invisible{
+    display: none;
+}
+.visible{
+    display: block;
+}
+@keyframes move{
+    0%{
+        transform: translateY(0px);
+        color: black;
+    }
+    50%{
+        transform: translateY(-110px);
+    }
+    60%{
+        color: transparent;
+    }
+    100%{
+        transform: translateY(-110px);
+    }
+}
