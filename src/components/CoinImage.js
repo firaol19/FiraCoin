@@ -87,14 +87,12 @@ export default function CoinImage(props){
             setRotateCheck(false);
         }, 100); // 3000ms = 3 seconds
     
-
-        
     }
 
     return(
         <div  className={styles.container}>
             <img style={rotateCheck ? {transform: "rotate(10deg)"} : {transform: "rotate(0deg)"}} onClick={handleMouseMove}
-            width={200} src={`${process.env.PUBLIC_URL}/images/coin2.png`} alt="Coin" 
+                 src={`${process.env.PUBLIC_URL}/images/coin2.png`} alt="Coin" 
             />
             
             <span id={styles.visible} className={visible ? styles.visble : styles.invisible}  style={{

@@ -1,6 +1,10 @@
 .container{
     position: relative;
 }
+.container img{
+    width: 80%;
+    height: auto;
+}
 #visible{
     animation-name: move;
     animation-iteration-count: infinite;
