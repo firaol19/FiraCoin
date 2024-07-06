@@ -49,17 +49,23 @@ export default function SpecialTask(props){
 
     function donecheck1(){
         if(done11 === 0){
-            setchack1(true)
+            setTimeout(() => {
+                setchack1(true)
+            }, 10000);
         }
     }
     function donecheck2(){
         if(done21 === 0){
-            setchack2(true)
+            setTimeout(() => {
+                setchack2(true)
+            }, 10000);
         }
     }
     function donecheck3(){
         if(done31 === 0){
-            setchack3(true)
+            setTimeout(() => {
+                setchack3(true)
+            }, 10000);
         }
     }
 
@@ -111,33 +117,33 @@ function taskdone3(){
             <div  className={styles.Container} >
                 <div className={styles.left}><FaYoutube size={35} color="#FF0000" /></div>
                 <div className={styles.right}>
-                    <a onClick={donecheck1} href="https://www.youtube.com/@firaolbekele7989">Subscribe Youtube</a>
+                    <a target="_blank" onClick={donecheck1} href="https://www.youtube.com/@firaolbekele7989">Subscribe Youtube</a>
                     <p>{coin} 3000</p>
                 </div>
                 <div onClick={taskdone1} className={styles.check} style={chack1   ? {display: 'block'} : {display: 'none'}}><span>Check</span></div>
                 <div className={styles.done} style={done1 === 1 ? {display: 'block'} : {display: 'none'}}><span>Done</span></div>
-                <a onClick={donecheck1} href="https://www.youtube.com/@firaolbekele7989" className={styles.angle}><FaAngleRight size={30} color="#FF0000"/></a>
+                <a target="_blank" onClick={donecheck1} href="https://www.youtube.com/@firaolbekele7989" className={styles.angle}><FaAngleRight size={30} color="#FF0000"/></a>
             </div>
             <div  className={styles.Container} >
             
                 <div className={styles.left}><FaFacebook size={35} color="#3b5998" /></div>
                 <div className={styles.right}>
-                    <a onClick={donecheck2} href="https://www.facebook.com/lijFira">Follow on FaceBook</a>
+                    <a target="_blank" onClick={donecheck2} href="https://www.facebook.com/lijFira">Follow on FaceBook</a>
                     <p>{coin} 3000</p>
                 </div>
                 <div onClick={taskdone2} className={styles.check} style={chack2   ? {display: 'block'} : {display: 'none'}}><span>Check</span></div>
                 <div className={styles.done} style={done2 === 1 ? {display: 'block'} : {display: 'none'}}><span>Done</span></div>
-                <a onClick={donecheck2} href="https://www.facebook.com/lijFira" className={styles.angle}><FaAngleRight size={30} color="#FF0000"/></a>
+                <a target="_blank" onClick={donecheck2} href="https://www.facebook.com/lijFira" className={styles.angle}><FaAngleRight size={30} color="#FF0000"/></a>
             </div>
             <div  className={styles.Container} >
                 <div className={styles.left}><FaTwitter size={35} color="#1DA1F2" /></div>
                 <div className={styles.right}>
-                    <a onClick={donecheck3} href="https://www.twitter.com/FiraolBekele13">Follow on Twiter</a>
+                    <a target="_blank" onClick={donecheck3} href="https://www.twitter.com/FiraolBekele13">Follow on Twiter</a>
                     <p>{coin} 3000</p>
                 </div>
                 <div onClick={taskdone3} className={styles.check} style={chack3   ? {display: 'block'} : {display: 'none'}}><span>Check</span></div>
                 <div className={styles.done} style={done3 === 1 ? {display: 'block'} : {display: 'none'}}><span>Done</span></div>
-                <a onClick={donecheck3} href="https://www.twitter.com/FiraolBekele13" className={styles.angle}><FaAngleRight size={30} color="#FF0000"/></a>
+                <a target="_blank" onClick={donecheck3} href="https://www.twitter.com/FiraolBekele13" className={styles.angle}><FaAngleRight size={30} color="#FF0000"/></a>
             </div>
             {isVisible && <img className={styles.animation} width={350} src={`${process.env.PUBLIC_URL}/images/coinanim.gif`} alt="Coin" />}
         </div>
