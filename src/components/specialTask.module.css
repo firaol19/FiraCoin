@@ -9,8 +9,10 @@
     margin: 7px;
     border-radius: 10px;
     text-align: left;
-    text-decoration: none;
-    
+    text-decoration: none; 
+}
+.Container a{
+    text-decoration: none; 
 }
 
 .left {

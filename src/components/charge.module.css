@@ -1,6 +1,9 @@
 .charge{
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: large;
+    font-size: 25px;
     font-weight: 600;
+}
+.charge span{
+    color: black;
 }

@@ -83,8 +83,8 @@ export default function Booster(props){
     return(
         <div className={styles.Container1}>
             <div>
-                <p>Your Balance</p>
-                <p>{coin}{props.countValue}</p>
+                <p className={styles.balance}>Your Balance</p>
+                <p className={styles.balance}>{coin}{props.countValue}</p>
             </div>
             <div className={styles.Container} onClick={buy1}>
                 <div><img className={styles.left} width={50} src={`${process.env.PUBLIC_URL}/images/hand.png`} alt="hand" /></div>

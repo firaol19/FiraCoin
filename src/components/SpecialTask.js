@@ -108,37 +108,37 @@ function taskdone3(){
 
     return(
         <div className={styles.Container1}>
-            <a href="https://www.youtube.com/@firaolbekele7989" className={styles.Container} onClick={donecheck1}>
+            <div  className={styles.Container} >
                 <div className={styles.left}><FaYoutube size={35} color="#FF0000" /></div>
                 <div className={styles.right}>
-                    <p>Subscribe Youtube</p>
+                    <a onClick={donecheck1} href="https://www.youtube.com/@firaolbekele7989">Subscribe Youtube</a>
                     <p>{coin} 3000</p>
                 </div>
                 <div onClick={taskdone1} className={styles.check} style={chack1   ? {display: 'block'} : {display: 'none'}}><span>Check</span></div>
                 <div className={styles.done} style={done1 === 1 ? {display: 'block'} : {display: 'none'}}><span>Done</span></div>
-                <div className={styles.angle}><FaAngleRight size={30} color="#FF0000"/></div>
-            </a>
-            <a href="https://www.facebook.com/lijFira" className={styles.Container} onClick={donecheck2}>
+                <a onClick={donecheck1} href="https://www.youtube.com/@firaolbekele7989" className={styles.angle}><FaAngleRight size={30} color="#FF0000"/></a>
+            </div>
+            <div  className={styles.Container} >
             
                 <div className={styles.left}><FaFacebook size={35} color="#3b5998" /></div>
                 <div className={styles.right}>
-                    <p>Follow on FaceBook</p>
+                    <a onClick={donecheck2} href="https://www.facebook.com/lijFira">Follow on FaceBook</a>
                     <p>{coin} 3000</p>
                 </div>
                 <div onClick={taskdone2} className={styles.check} style={chack2   ? {display: 'block'} : {display: 'none'}}><span>Check</span></div>
                 <div className={styles.done} style={done2 === 1 ? {display: 'block'} : {display: 'none'}}><span>Done</span></div>
-                <div className={styles.angle}><FaAngleRight size={30} color="#FF0000"/></div>
-            </a>
-            <a href="https://www.twitter.com/FiraolBekele13" className={styles.Container} onClick={donecheck3}>
+                <a onClick={donecheck2} href="https://www.facebook.com/lijFira" className={styles.angle}><FaAngleRight size={30} color="#FF0000"/></a>
+            </div>
+            <div  className={styles.Container} >
                 <div className={styles.left}><FaTwitter size={35} color="#1DA1F2" /></div>
                 <div className={styles.right}>
-                    <p>Follow on Twiter</p>
+                    <a onClick={donecheck3} href="https://www.twitter.com/FiraolBekele13">Follow on Twiter</a>
                     <p>{coin} 3000</p>
                 </div>
                 <div onClick={taskdone3} className={styles.check} style={chack3   ? {display: 'block'} : {display: 'none'}}><span>Check</span></div>
                 <div className={styles.done} style={done3 === 1 ? {display: 'block'} : {display: 'none'}}><span>Done</span></div>
-                <div className={styles.angle}><FaAngleRight size={30} color="#FF0000"/></div>
-            </a>
+                <a onClick={donecheck3} href="https://www.twitter.com/FiraolBekele13" className={styles.angle}><FaAngleRight size={30} color="#FF0000"/></a>
+            </div>
             {isVisible && <img className={styles.animation} width={350} src={`${process.env.PUBLIC_URL}/images/coinanim.gif`} alt="Coin" />}
         </div>
     )
